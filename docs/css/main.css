@@ -1,0 +1,77 @@
+.content {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0892d0;
+    margin-bottom: 25px;
+    border: thin solid #323232;
+    -webkit-transition: background-color 10s linear;
+    transition: background-color 10s linear;
+}
+
+.navbar-home {
+    font-size: 24pt;
+    padding: 10px;
+    flex-shrink: 0;
+    color: black;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 24pt;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+.peakd-nav-link img {
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 150px;
+}
+
+.twitch-nav-link img {
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 40px;
+}
+
+.github-nav-link img {
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 50px;
+}
+
+a {
+    transition: color 1s;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #ffe62d; 
+    text-decoration: none;
+}

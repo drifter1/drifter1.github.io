@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
 <body>
     <div class="content">
+
         <nav>
-            <a href="/index.html">Home</a>
+            <a class="navbar-home" href="/">DRIFTER1</a>
+            <div class="nav-links">
+                <a class="nav-link" href="/categories">Categories</a>
+                <a class="nav-link" href="/projects">Projects</a>
+                <a class="nav-link" href="/about">About</a>
+                <a class="peakd-nav-link" href="https://peakd.com/@drifter1">
+                    <img src="/images/peakd-logo.svg" />
+                </a>
+                <a class="twitch-nav-link" href="https://www.twitch.tv/drifter1live">
+                    <img src="/images/twitch-logo.png" />
+                </a>
+                <a class="github-nav-link" href="https://github.com/drifter1">
+                    <img src="/images/github-logo.png" />
+                </a>
+            </div> <!-- end nav-links -->
         </nav>
 
         {{ content }}
 
         <hr>
         <footer>Keep on Drifting!</footer>
-    </div>
+
+    </div> <!-- end content -->
 </body>
 
 </html>
