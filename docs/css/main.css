@@ -13,56 +13,48 @@ nav{
     align-items: center;
     background-color: #0892d0;
     margin-bottom: 25px;
-    border: thin solid #323232;
-    -webkit-transition: background-color 10s linear;
-    transition: background-color 10s linear;
+    border: thin solid black;
 }
 
 .navbar-home {
-    font-size: 24pt;
+    font-size: 28pt;
     padding: 10px;
-    flex-shrink: 0;
     color: black;
 }
 
 .nav-links {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
     align-items: center;
 }
 
 .nav-link {
-    font-size: 24pt;
+    font-size: 28pt;
     text-align: center;
     padding: 10px;
     color: black;
 }
 
-.peakd-nav-link img {
+.twitch-link img {
     display: block;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    width: 150px;
-}
-
-.twitch-nav-link img {
-    display: block;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
+    margin: 10px;
     width: 40px;
 }
 
-.github-nav-link img {
+.github-link img {
     display: block;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
+    margin: 10px;
     width: 50px;
+}
+
+.peakd-link img {
+    display: block;
+    margin: 10px;
+    width: 150px;
 }
 
 a {
@@ -74,4 +66,28 @@ a {
 a:hover, a:focus {
     color: #ffe62d; 
     text-decoration: none;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0892d0;
+    margin-bottom: 25px;
+    border: thin solid black;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 22px;
 }
