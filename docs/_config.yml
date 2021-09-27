@@ -5,3 +5,4 @@ title: Drifter1
 theme: minima
 plugins:
   - jekyll-feed
+  - jemoji
