@@ -1,7 +1,9 @@
 .container {
     margin: 10px auto;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
+    border: thin solid black;
+    background-color: white;
 }
 
 h1 {
