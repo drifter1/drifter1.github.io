@@ -12,9 +12,8 @@ body {
 
 nav{
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     background-color: #0892d0;
     margin-bottom: 25px;
@@ -29,17 +28,20 @@ nav{
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .social-links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .nav-link {
     font-size: 3em;
     text-align: center;
+    margin: 25px auto;
     padding: 10px;
     color: black;
 }
