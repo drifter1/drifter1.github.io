@@ -37,7 +37,7 @@ h4 {
 .topics {
     display : flex;
     flex-wrap: wrap;
-    margin: 25px auto;
+    margin: 10px auto;
     max-width: 800px;
     text-align: center;
     border: thin solid black;
@@ -45,10 +45,35 @@ h4 {
 }
 
 .topic {
-    margin: 25px auto;
-    width: 250px;
+    margin: 10px auto;
+    width : 100%;
+    min-width: 250px;
     height: 250px;
     text-align: center;
     border: thin solid black;
     background-color: white;
+}
+
+@media only screen and (min-width : 550px){
+    .topic {
+        margin: 10px auto;
+        width : 49%;
+        min-width: 250px;
+        height: 250px;
+        text-align: center;
+        border: thin solid black;
+        background-color: white;
+    }
+}
+
+@media only screen and (min-width : 800px){
+    .topic {
+        margin: 10px auto;
+        width : 33%;
+        min-width: 250px;
+        height: 250px;
+        text-align: center;
+        border: thin solid black;
+        background-color: white;
+    }
 }

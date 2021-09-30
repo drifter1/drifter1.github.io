@@ -16,7 +16,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: #0892d0;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     border: thin solid black;
 }
 
@@ -41,7 +41,7 @@ nav{
 .nav-link {
     font-size: 3em;
     text-align: center;
-    margin: 25px auto;
+    margin: 10px auto;
     padding: 10px;
     color: black;
 }
