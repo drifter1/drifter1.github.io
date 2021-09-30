@@ -7,6 +7,7 @@ body {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif, cursive;
 }
 
 nav{
@@ -21,7 +22,7 @@ nav{
 }
 
 .navbar-home {
-    font-size: 4em;
+    font-size: 3em;
     padding: 10px;
     color: black;
 }
