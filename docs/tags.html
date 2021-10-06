@@ -3,27 +3,16 @@ layout: default
 title: Tags
 ---
 
-<link rel="stylesheet" type="text/css" href="/css/tags.css">
+<h1>Tags</h1>
 
-<div class="container">
+<hr>
 
-    <h1>Tags</h1>
+<div class="tags">
 
-    <hr>
-
-    <div class="tags">
-        <div style="font-size: 2.5em; margin-left: 25px; margin-top: 25px;"> programming </div>
-        <div style="font-size: 2.1em; margin-left: 25px; margin-top: 25px;"> development </div>
-        <div style="font-size: 1.7em; margin-left: 25px; margin-top: 25px;"> python </div>
-        <div style="font-size: 1.4em; margin-left: 25px; margin-top: 25px;"> blockchain </div>
-        <div style="font-size: 1.3em; margin-left: 25px; margin-top: 25px;"> flask </div>
-        <div style="font-size: 1.7em; margin-left: 25px; margin-top: 25px;"> dev-blog </div>
-        <div style="font-size: 2.4em; margin-left: 25px; margin-top: 25px;"> mathematics </div>
-        <div style="font-size: 1.7em; margin-left: 25px; margin-top: 25px;"> science </div>
-        <div style="font-size: 1.4em; margin-left: 25px; margin-top: 25px;"> exercises </div>
-        <div style="font-size: 1.4em; margin-left: 25px; margin-top: 25px;"> examples </div>
-        <div style="font-size: 2.2em; margin-left: 25px; margin-top: 25px;"> education </div>
-        <div style="font-size: 1.8em; margin-left: 25px; margin-top: 25px;"> verilog </div>
+    {% for tag in site.tags %}
+    <div class="tag">
+        {{ tag[0] }}
     </div>
+    {% endfor %}
 
 </div>

@@ -8,50 +8,31 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+          }
+        });
+      </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
 </head>
 
 <body>
+
     <div class="content">
-        <nav>
-            <a class="navbar-home" href="/">Drifter1</a>
-            <div class="nav-links">
-                <a class="nav-link" href="/tutorials">Tutorials</a>
-                <a class="nav-link" href="/tags">Tags</a>
-                <a class="nav-link" href="/about">About Me</a>
-            </div> <!-- end nav-links -->
 
-            <div class="social-links">
-                <a class="img-link" href="https://github.com/drifter1">
-                    <img src="/images/github-logo.png" />
-                </a>
-            </div> <!-- end social-links -->
-        </nav>
+        {% include navbar.html %}
 
-        {{ content }}
+        <div class="container">
 
-        <footer>
-            <div class="footer-links">
-                <a class="peakd-link" href="https://peakd.com/@drifter1">
-                    <img src="/images/peakd-logo.svg" />
-                </a>
-                <a class="img-link" href="https://odysee.com/@drifter1">
-                    <img src="/images/odysee-logo.png" />
-                </a>
-                <a class="img-link" href="https://github.com/drifter1">
-                    <img src="/images/github-logo.png" />
-                </a>
-            </div> <!-- end footer-links -->
+            {{ content }}
 
-            <div class="footer-text">
-                You can find me over on <a href="https://peakd.com/@drifter1">PeakD</a>,
-                <a href="https://odysee.com/@drifter1">Odysee</a> and
-                <a href="https://github.com/drifter1">GitHub</a>!
-                <br>
-                I'm always open to questions and suggestions, so don't hesitate to <a href="/about">contact me</a>!
-                <br>
-                Keep on Drifting!
-            </div>
-        </footer>
+        </div>
+
+        {% include footer.html %}
 
     </div> <!-- end content -->
 

@@ -1,0 +1,66 @@
+---
+layout: default
+title: Programming
+---
+
+<link rel="stylesheet" type="text/css" href="/css/tutorials.css">
+
+<h1>Programming</h1>
+
+<hr>
+
+<a href="/tutorials/programming/c">
+    <img src="/images/tutorials/programming/c.png" />
+</a>
+<h2>C Language</h2>
+
+<div class="topics">
+
+    {% for post in site.posts reversed %}
+    {% if post.categories contains 'c' %}
+    <div class="topic">
+        <a href="{{ post.url }}">
+            <img src="{{ post.thumbnail }}" />
+        </a>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+</div>
+
+<hr>
+
+<a href="/tutorials/programming/java">
+    <img src="/images/tutorials/programming/java.png" />
+</a>
+<h2>Java Language</h2>
+
+<hr>
+
+<a href="/tutorials/programming/mips">
+    <img src="/images/tutorials/programming/mips.png" />
+</a>
+<h2>MIPS Assembly</h2>
+
+<hr>
+
+<a href="/tutorials/programming/network-programming">
+    <img src="/images/tutorials/programming/network-programming.png" />
+</a>
+<h2>Network Programming</h2>
+
+<hr>
+
+<a href="/tutorials/programming/parallel-programming">
+    <img src="/images/tutorials/programming/parallel-programming.png" />
+</a>
+<h2>Parallel Programming</h2>
+
+<hr>
+
+<a href="/tutorials/programming/distributed-programming">
+    <img src="/images/tutorials/programming/distributed-programming.png" />
+</a>
+<h2>Distributed Programming</h2>
