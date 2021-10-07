@@ -174,3 +174,9 @@ printf("Trucks:\nCard Only: %d,Cash Only: %d,Card and Cash: %d\n", card_t, cash_
 printf("All Together:\nCard Only: %d,Cash Only: %d,Card and Cash: %d\n", card, cash, both);
 }
 ```
+
+* * *
+
+## C Language
+
+{% include programming/c_topics.html %}

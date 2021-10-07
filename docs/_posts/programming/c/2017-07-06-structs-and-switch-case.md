@@ -121,19 +121,19 @@ We want to create an interface in command line (menu with switch case) that lets
 
 The Interface needs to have the following:
 
--let us load from and save to a file
+- let us load from and save to a file
 
--let us add Groups
+- let us add Groups
 
--let us search for a specific Group based on the ID or Name
+- let us search for a specific Group based on the ID or Name
 
--let us display all Groups
+- let us display all Groups
 
--let us find the Albums of a given Group after a given Year
+- let us find the Albums of a given Group after a given Year
 
--let us find the best-selling Album of a given Group
+- let us find the best-selling Album of a given Group
 
--let us sort the Group's Alphabetically
+- let us sort the Group's Alphabetically
 
 All of those Options will be accessed with a switch case statement inside of an infinite while loop.
 
@@ -680,3 +680,9 @@ Brother_in_arms 1985 9000000 //album 2 information of group 2
 ```
 
 You can see that I return a pointer everytime I change something in the dynamic struct array. You could also do it via reference (using **group instead of *group) and using *something and passing the address of the pointer(!) when calling the function. But, to make it simple let's stick with returning cause it's more C-Like and putting it by reference is easier in Object-oriented Programming like Java or C#, cause working with pointer's is difficult and knowning when to put &, * or nothing at a scanf or printf statement gets a little difficult.
+
+* * *
+
+## C Language
+
+{% include programming/c_topics.html %}

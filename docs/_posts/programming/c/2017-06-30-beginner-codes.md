@@ -9,7 +9,6 @@ permalink: /tutorials/:categories/:title
 ---
 
 # C Beginner Codes
-
 * * *
 
 I will not explain every single thing like what is an if, while, for statement, how you can print in the Console and so on. You can look that all up in the Internet searching for C Basics. Here, we will start with some Codes that implement those things and shows you exactly what you can do with them in practice.
@@ -311,3 +310,9 @@ int main(){
 
 }
 ```
+
+* * *
+
+## C Language
+
+{% include programming/c_topics.html %}

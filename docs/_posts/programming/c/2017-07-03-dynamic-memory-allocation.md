@@ -14,7 +14,7 @@ permalink: /tutorials/:categories/:title
 
 In this post we will discuss how we can use dynamic Arrays in C. We will use the **stdlib.h** functions for memory management called **malloc()** and **realloc()**. This 2 functions return a pointer to a memory location of a requested size. You have to set up a pointer and save the return value to this pointer. 
 
-![](http://www.zentut.com/wp-content/uploads/2009/12/c-dynamic-memory-allocation.jpg)
+# ![](http://www.zentut.com/wp-content/uploads/2009/12/c-dynamic-memory-allocation.jpg)
 
 **For example:** Suppose we want an dynamic integer array. We will create a pointer to an integer as follow **int *A;**  
 
@@ -371,3 +371,9 @@ When the infinite loop stops we print all the informations as a table. Because t
 This task actually had statistics like some previous posts of myself, but because this one is only showing of dynamic arrays I took them off.  
 
 Next time we will do something similar to store information, but with a dynamic struct and save and load from file.
+
+* * *
+
+## C Language
+
+{% include programming/c_topics.html %}

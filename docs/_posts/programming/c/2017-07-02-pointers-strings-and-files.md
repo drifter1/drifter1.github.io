@@ -14,7 +14,7 @@ permalink: /tutorials/:categories/:title
 
 In this post I will continue in C with a programm that reads from a textfile, does some String stuff on it (using String functions) and also uses Pointers (because of those functions).
 
-![](http://www.codewithc.com/wp-content/uploads/2014/06/pointer-amperstand-asterisk.png)
+# ![](http://www.codewithc.com/wp-content/uploads/2014/06/pointer-amperstand-asterisk.png)
 
 # **Pointers: **
 
@@ -32,7 +32,7 @@ Let's take an char *p pointer as example. (*name is how you tell if something is
 
 **Making it look at something:** To make it point something you just make it equal the value's address in memory. _For example,_ if we have a char variable called c with value 'a' then if we do: p = &c (& is used to get the address of the variable) we make p point at it. Afterwards, we could change the value of the char variable c only by changing the value p is pointing at like: *p ='b' and so on.
 
-![](https://www.tutorialspoint.com/cprogramming/images/string_representation.jpg)
+# ![](https://www.tutorialspoint.com/cprogramming/images/string_representation.jpg)
 
 # **Strings: **
 
@@ -43,7 +43,7 @@ Let's take an char *p pointer as example. (*name is how you tell if something is
 
 We will use the **string.h** library functions to do some cool stuff with them.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Text-txt.svg/400px-Text-txt.svg.png)
+# ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Text-txt.svg/400px-Text-txt.svg.png)
 
 # **Files: **
 
@@ -398,3 +398,9 @@ First make sure to have a textfile called "text.txt". You can use another locati
 
     }
 ```
+
+* * *
+
+## C Language
+
+{% include programming/c_topics.html %}
