@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <script type="text/x-mathjax-config">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <!-- Latex Math -->
+  <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           tex2jax: {
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -16,25 +17,29 @@
           }
         });
       </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-        type="text/javascript"></script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    type="text/javascript"></script>
+  <!-- Syntax Highlighting -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
 
-    <div class="content">
+  <div class="content">
 
-        {% include navbar.html %}
+    {% include navbar.html %}
 
-        <div class="container">
+    <div class="container">
 
-            {{ content }}
+      {{ content }}
 
-        </div>
+    </div>
 
-        {% include footer.html %}
+    {% include footer.html %}
 
-    </div> <!-- end content -->
+  </div> <!-- end content -->
 
 </body>
 

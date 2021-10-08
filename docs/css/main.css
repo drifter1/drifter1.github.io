@@ -172,6 +172,8 @@ pre code {
     max-width: 800px;
     border: thin solid black;
     background-color: rgb(240, 240, 240);
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word;
 }
 
 .tags {
