@@ -1,15 +1,19 @@
-<div class="topics">
+<div class="columns has-text-centered is-multiline">
 
     {% for post in site.posts reversed %}
     {% if post.categories contains 'c' %}
-    <div class="topic">
-        <a href="{{ post.url }}">
-            <img src="{{ post.thumbnail }}" />
-        </a>
+    <article class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd box">
+        <figure class="image is-128x128 is-inline-block">
+            <a href="{{ post.url }}">
+                <img src="{{ post.thumbnail }}" />
+            </a>
+        </figure>
         <h3>{{ post.title }}</h3>
         <p>{{ post.description }}</p>
-    </div>
+    </article>
     {% endif %}
     {% endfor %}
+
+    <br>
 
 </div>

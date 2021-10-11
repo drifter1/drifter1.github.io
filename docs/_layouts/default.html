@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.css">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <!-- Latex Math -->
@@ -27,19 +27,29 @@
 
 <body>
 
-  <div class="content">
+  {% include navbar.html %}
 
-    {% include navbar.html %}
+  <section class="section">
 
-    <div class="container">
+    <div class="columns">
 
-      {{ content }}
+      <div class="column is-one-fifth is-hidden-mobile">
+
+        {% include menu.html %}
+
+      </div>
+
+      <div class="column is-four-fifths content">
+
+        {{ content }}
+
+      </div>
 
     </div>
 
-    {% include footer.html %}
+  </section>
 
-  </div> <!-- end content -->
+  {% include footer.html %}
 
 </body>
 

@@ -315,4 +315,6 @@ int main(){
 
 ## C Language
 
+<br>
+
 {% include programming/c_topics.html %}

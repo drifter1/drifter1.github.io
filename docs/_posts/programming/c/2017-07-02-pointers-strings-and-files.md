@@ -403,4 +403,6 @@ First make sure to have a textfile called "text.txt". You can use another locati
 
 ## C Language
 
+<br>
+
 {% include programming/c_topics.html %}

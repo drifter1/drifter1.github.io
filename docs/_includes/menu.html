@@ -1,0 +1,87 @@
+<aside class="menu">
+
+    <a class="menu-label" href="/tutorials/programming">
+        Programming
+    </a>
+    <ul class="menu-list">
+        <li>
+            <a class="is-active" href="/tutorials/programming/c">C Language</a>
+            <ul>
+                {% for post in site.posts reversed %}
+                {% if post.categories contains 'c' %}
+                <li>
+                    <a href="{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+        <li><a href="/tutorials/programming/java">Java Language</a></li>
+        <li><a href="/tutorials/programming/mips">MIPS Assembly</a></li>
+        <li><a href="/tutorials/programming/network">Network Programming</a></li>
+        <li><a href="/tutorials/programming/parallel">Parallel Programming</a></li>
+        <li><a href="/tutorials/programming/distributed">Distributed Programming</a></li>
+    </ul>
+
+    <a class="menu-label" href="/tutorials/logic-design">
+        Logic Design
+    </a>
+    <ul class="menu-list">
+        <li><a href="/tutorials/logic-design/theory">Theory</a></li>
+        <li><a href="/tutorials/logic-design/multisim">Multisim</a></li>
+        <li><a href="/tutorials/logic-design/vhdl">VHDL</a></li>
+        <li><a href="/tutorials/logic-design/verilog">Verilog</a></li>
+        <li><a href="/tutorials/logic-design/modelsim">ModelSim</a></li>
+        <li><a href="/tutorials/logic-design/fpgas">FPGAs</a></li>
+    </ul>
+
+    <a class="menu-label" href="/tutorials/compiler-design">
+        Compiler Design
+    </a>
+    <ul class="menu-list">
+        <li><a href="/tutorials/compiler-design/lexical-analysis">Lexical Analysis</a></li>
+        <li><a href="/tutorials/compiler-design/syntax-analysis">Syntax Analysis</a></li>
+        <li><a href="/tutorials/compiler-design/semantic-analysis">Semantic Analysis</a></li>
+        <li><a href="/tutorials/compiler-design/intermediate-code-generation">Intermediate Code Generation</a></li>
+        <li><a href="/tutorials/compiler-design/machine-code-generation">Machine Code Generation</a></li>
+    </ul>
+
+    <a class="menu-label" href="/tutorials/mathematics">
+        Mathematics
+    </a>
+    <ul class="menu-list">
+        <li><a href="/tutorials/mathematics/linear-algebra">Linear Algebra</a></li>
+        <li><a href="/tutorials/mathematics/mathematical-analysis">Mathematical Analysis</a></li>
+        <li><a href="/tutorials/mathematics/differential-equations">Differential Equations</a></li>
+        <li><a href="/tutorials/mathematics/signals-and-systems">Signals and Systems</a></li>
+        <li><a href="/tutorials/mathematics/other">Other</a></li>
+    </ul>
+
+    <a class="menu-label" href="/tutorials/physics">
+        Physics
+    </a>
+    <ul class="menu-list">
+        <li><a href="/tutorials/physics/classical-mechanics">Classical Mechanics</a></li>
+        <li><a href="/tutorials/physics/electromagnetism">Electromagnetism</a></li>
+    </ul>
+
+    <a class="menu-label" href="/tutorials/electronic-circuit-simulation">
+        Electronic Circuit Simulation
+    </a>
+    <ul class="menu-list">
+        <li><a href="/tutorials/electronic-circuit-simulation/electromagnetism-background">Electromagnetism
+                Background</a></li>
+        <li><a href="/tutorials/electronic-circuit-simulation/mesh-and-nodal-analysis">Mesh and Nodal Analysis</a></li>
+        <li><a href="/tutorials/electronic-circuit-simulation/modified-nodal-analysis">Modified Nodal Analysis</a></li>
+        <li><a href="/tutorials/electronic-circuit-simulation/static-analysis">Static Analysis</a></li>
+        <li><a href="/tutorials/electronic-circuit-simulation/sparse-matrix-optimization">Sparse Matrix Optimization</a>
+        </li>
+    </ul>
+
+    <a class="menu-label" href="/tutorials/blockchain">
+        Blockchain
+    </a>
+
+</aside>

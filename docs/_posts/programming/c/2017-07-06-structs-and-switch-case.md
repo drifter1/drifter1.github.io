@@ -9,7 +9,6 @@ permalink: /tutorials/:categories/:title
 ---
 
 # C Structs and Switch Case
-
 * * *
 # ![](http://www.tenouk.com/clabworksheet/labworksheet14_files/cstructprogramming020.png)
 
@@ -73,7 +72,7 @@ Structs are a way of defining user variable types where you can put anything you
 
 and so on.
 
-Setting it up like that you have to use **struct struct_name s;** to create a struct variable s of type struct_name.
+Setting it up like that you have to use **struct struct_name s; ** to create a struct variable s of type struct_name.
 
 To get rid of the struct every time you can use **typedef**.
 
@@ -81,7 +80,7 @@ To get rid of the struct every time you can use **typedef**.
 
        ...} struct_alias;
 
-The struct_alias is the way you want to call it when creating a variable. So using typedef we can now create a struct variable s of type struct_name using **struct_alias s;** The struct_name is optional when you are using typedef so you could also use only struct_alias. 
+The struct_alias is the way you want to call it when creating a variable. So using typedef we can now create a struct variable s of type struct_name using **struct_alias s; ** The struct_name is optional when you are using typedef so you could also use only struct_alias. 
 
 Finishing of let me tell you that you can use **struct pointers** (that will be really helpfull when we get into lists), create a **struct array** that will be todays Code and that you have to use the **'.' modifier** to access each specific member and to do stuff with it afterwards like this:
 
@@ -121,19 +120,19 @@ We want to create an interface in command line (menu with switch case) that lets
 
 The Interface needs to have the following:
 
-- let us load from and save to a file
+* let us load from and save to a file
 
-- let us add Groups
+* let us add Groups
 
-- let us search for a specific Group based on the ID or Name
+* let us search for a specific Group based on the ID or Name
 
-- let us display all Groups
+* let us display all Groups
 
-- let us find the Albums of a given Group after a given Year
+* let us find the Albums of a given Group after a given Year
 
-- let us find the best-selling Album of a given Group
+* let us find the best-selling Album of a given Group
 
-- let us sort the Group's Alphabetically
+* let us sort the Group's Alphabetically
 
 All of those Options will be accessed with a switch case statement inside of an infinite while loop.
 
@@ -156,6 +155,7 @@ Making_Movies 1980 1000000 //album 1 information of group 2
 Brother_in_arms 1985 9000000 //album 2 information of group 2
 
 ```c++
+
     #include <stdio.h> //input output
 
     #include <stdlib.h> //malloc, realloc
@@ -282,7 +282,7 @@ Brother_in_arms 1985 9000000 //album 2 information of group 2
 
     				scanf("%d",&temp);
 
-    			    search_group_id(group, temp, group_count);	//sunarthsh poy emfanizei to sugkrothma me ID poy dinei o xrhsths
+    			    search_group_id(group, temp, group_count);
 
     				break;			
 
@@ -677,6 +677,7 @@ Brother_in_arms 1985 9000000 //album 2 information of group 2
     	return search;
 
     }
+
 ```
 
 You can see that I return a pointer everytime I change something in the dynamic struct array. You could also do it via reference (using **group instead of *group) and using *something and passing the address of the pointer(!) when calling the function. But, to make it simple let's stick with returning cause it's more C-Like and putting it by reference is easier in Object-oriented Programming like Java or C#, cause working with pointer's is difficult and knowning when to put &, * or nothing at a scanf or printf statement gets a little difficult.
@@ -684,5 +685,7 @@ You can see that I return a pointer everytime I change something in the dynamic 
 * * *
 
 ## C Language
+
+<br>
 
 {% include programming/c_topics.html %}

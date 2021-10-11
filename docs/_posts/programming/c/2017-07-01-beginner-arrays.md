@@ -179,4 +179,6 @@ printf("All Together:\nCard Only: %d,Cash Only: %d,Card and Cash: %d\n", card, c
 
 ## C Language
 
+<br>
+
 {% include programming/c_topics.html %}
