@@ -16,7 +16,6 @@ permalink: /tutorials/:categories/:title
    In today's post we will talk about **Linked Lists** in C Language. I will show you how to **create a List**, **insert** and **remove** an Item. Also, how to **search** for a **specific Item** in the List and we will also do some more advanced stuff that includes **printing** in **normal and reverse order** using recursive algorithms that are pretty simple if you get the hang of it. So, without further do, let's start out with the representation in Code of an List.
 
 * * *
-
 # List Representation:
 
     An **Lis**t is an **Data Structure** that can be of infinite length were an Item called **head** points to another item in the list, that points to another item and so on... Every item contains a **pointer to the next Item** and Data that can be everything. So, an List in C is an **struct** that is defined like that:
@@ -28,7 +27,8 @@ typedef struct Node{
 
     struct Node *next; //pointer to next Item
 
-}Node;
+}Node; 
+
 ```
 
     Every Item is a **Node** of the List. We **store** the **Pointer to the first Item** in memory in our function so that we can afterwards use it in another variable called **current_pointer**, without losing it to get the information of all of our Nodes. So, the main function will use an Node of this kind initialized to NULL:
@@ -40,23 +40,23 @@ Node *head = NULL;
     Let's now talk about **functions** that will do stuff on our List like: insert, remove, search, sort, print.
 
 * * *
-
 # Insert:
 
     For inserting we will use an Item called **new_node** or **nn** that will **temporary store** our new Node and that we will **afterwards insert** to our List to the **front** or **rear**. This Item will be created using the memory allocation function **malloc(**) for dynamic memory allocation that we already know and because it is a **struct** we will then access each **member** of the struct using the **'->' modifier**. We use an **arrow** instead of the dot, because we are now going to member's of an struct pointer! So, our **new_node Code** will look like this:
 
 ```c++
-Node* nn;
+Node* nn; 
 
-nn = (Node*) malloc (sizeof(Node));
+nn = (Node*) malloc (sizeof(Node)); 
 
 // for every Data Variable we do
 
-nn->Data = value;
+nn->Data = value; 
 
 // we set the next pointer to NULL
 
-nn->next = NULL;
+nn->next = NULL; 
+
 ```
 
     When inserting we always make sure if it is the first Item inserted, checking if our **List is NULL** that means it is **empty**. 
@@ -149,6 +149,7 @@ Node *insertLast(Node *head, int val){
 	return head;	
 
 }
+
 ```
 
     To **insert in a Specific location** in between you have to first search the Item after it should be inserted. You can find it out by yourself after I show you searching. 
@@ -239,6 +240,7 @@ Node* deleteLast(Node *head){
 	return head;
 
 }
+
 ```
 
   To **delete a Specific Item** in between you have to first search the **Item that points to it** and afterwards **set** it's **next pointer** **to** be the **next pointer** **of** the **Item** that should be **deleted**. (that was a mouthful xD). I guess you can do it by yourself after I show you searching that comes next.
@@ -298,7 +300,6 @@ Node* searchList(Node *head, int val){
 ```
 
 * * *
-
 # Print:
 
     Printing is Last and I will show you how you implement it using recursive algorithms.
@@ -341,6 +342,7 @@ void printList(Node *head){
 	printf("NULL\n");	
 
 }
+
 ```
 
     But, to make it more interesting let's show it with an **recursive function** too. The Code will **check emptyness** as an stop condition and afterwards **print the value** and **recall with next pointer** like this:
@@ -394,13 +396,14 @@ void reversePrintList(Node *head){
 
     // call again using next pointer
 
-    reversePrintList(head->next);
+    reversePrintList(head->next); 
 
     //print with <- to make it look like a List
 
-    printf("<-%d", head->val);
+    printf("<-%d", head->val); 
 
 }
+
 ```
 
     Off course, you can do more stuff like **sorting**, but what I told you here is I think more than enough to start out using Lists in C. A simple programm that uses all off those functions is tha following:
@@ -409,57 +412,53 @@ void reversePrintList(Node *head){
 
 # **Code:**
 
-```c++
-int main(){
+	int main(int argc, char *argv[]){
+		// the head is initialized as NULL first
 
-	// the head is initialized as NULL first
+		Node *head = NULL;
 
-	Node *head = NULL;
+		// insert 5 first and print list
 
-	// insert 5 first and print list
+		head = insertFirst(head, 5);
 
-	head = insertFirst(head, 5);
+		printList(head);
 
-	printList(head);
+		// insert 6 last and print list
 
-	// insert 6 last and print list
+		head = insertLast(head, 6);
 
-	head = insertLast(head, 6);
+		printList(head);
 
-	printList(head);
+		// insert 3 last and print list
 
-	// insert 3 last and print list
+		head = insertLast(head, 3);
 
-	head = insertLast(head, 3);
+		printList(head);
 
-	printList(head);
+		// search for 5	
 
-	// search for 5	
+		Node *search;
 
-	Node *search;
+		search = searchList(head, 5);
 
-	search = searchList(head, 5);
+		// if not found
 
-	// if not found
+		if(search == NULL){
 
-	if(search == NULL){
+			printf("Not Found!\n");
 
-		printf("Not Found!\n");
+		}
 
+		else{
+
+			printf("%d was Found!\n", search->val);
+
+		}
+
+		// print in reverse order
+
+		reversePrintList(head);	
 	}
-
-	else{
-
-		printf("%d was Found!\n", search->val);
-
-	}
-
-	// print in reverse order
-
-	reversePrintList(head);	
-
-}
-```
 
     I don't included the structs and stuff cause I told you how you set the up before. Also, this is the end of today's post. Hope you enjoyed it and next time prepare for Trees in C!
 

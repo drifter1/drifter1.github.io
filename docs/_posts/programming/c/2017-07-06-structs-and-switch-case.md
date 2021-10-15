@@ -154,8 +154,6 @@ Making_Movies 1980 1000000 //album 1 information of group 2
 
 Brother_in_arms 1985 9000000 //album 2 information of group 2
 
-```c++
-
     #include <stdio.h> //input output
 
     #include <stdlib.h> //malloc, realloc
@@ -677,8 +675,6 @@ Brother_in_arms 1985 9000000 //album 2 information of group 2
     	return search;
 
     }
-
-```
 
 You can see that I return a pointer everytime I change something in the dynamic struct array. You could also do it via reference (using **group instead of *group) and using *something and passing the address of the pointer(!) when calling the function. But, to make it simple let's stick with returning cause it's more C-Like and putting it by reference is easier in Object-oriented Programming like Java or C#, cause working with pointer's is difficult and knowning when to put &, * or nothing at a scanf or printf statement gets a little difficult.
 
