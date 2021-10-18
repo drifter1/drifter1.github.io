@@ -10,6 +10,7 @@ permalink: /tutorials/:categories/:title
 
 # C Structs and Switch Case
 * * *
+
 # ![](http://www.tenouk.com/clabworksheet/labworksheet14_files/cstructprogramming020.png)
 
 # Switch Case Statement:

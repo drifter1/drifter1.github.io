@@ -4,20 +4,7 @@
         Programming
     </a>
     <ul class="menu-list">
-        <li>
-            <a class="is-active" href="/tutorials/programming/c">C Language</a>
-            <ul>
-                {% for post in site.posts reversed %}
-                {% if post.categories contains 'c' %}
-                <li>
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-        </li>
+        <li><a href="/tutorials/programming/c">C Language</a></li>
         <li><a href="/tutorials/programming/java">Java Language</a></li>
         <li><a href="/tutorials/programming/mips">MIPS Assembly</a></li>
         <li><a href="/tutorials/programming/network">Network Programming</a></li>

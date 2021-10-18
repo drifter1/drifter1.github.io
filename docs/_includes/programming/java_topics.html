@@ -5,7 +5,7 @@
 <div class="columns has-text-centered is-multiline">
 
     {% for post in site.posts reversed %}
-    {% if post.categories contains 'c' %}
+    {% if post.categories contains 'java' %}
     {% if post.tags contains 'basics' %}
     <article class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd box">
         <figure class="image is-128x128 is-inline-block">
@@ -31,7 +31,7 @@
 <div class="columns has-text-centered is-multiline">
 
     {% for post in site.posts reversed %}
-    {% if post.categories contains 'c' %}
+    {% if post.categories contains 'java' %}
     {% if post.tags contains 'datastructures' %}
     <article class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd box">
         <figure class="image is-128x128 is-inline-block">
@@ -50,16 +50,15 @@
 
 </div>
 
-
-<h3 class="is-spaced has-text-centered">Other</h3>
+<h3 class="is-spaced has-text-centered">GUI</h3>
 
 <br>
 
 <div class="columns has-text-centered is-multiline">
 
     {% for post in site.posts reversed %}
-    {% if post.categories contains 'c' %}
-    {% if post.tags contains 'other' %}
+    {% if post.categories contains 'java' %}
+    {% if post.tags contains 'gui' %}
     <article class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd box">
         <figure class="image is-128x128 is-inline-block">
             <a href="{{ post.url }}">
