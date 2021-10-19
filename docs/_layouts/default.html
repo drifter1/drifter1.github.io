@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <!-- Search -->
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.js"></script>
 </head>
 
 <body>
@@ -36,6 +38,10 @@
     <div class="columns">
 
       <div class="column is-one-fifth is-hidden-mobile">
+
+        {% include search.html %}
+
+        <hr>
 
         {% include menu.html %}
 
